@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.text1-error{
+   color: blue;
+}
+</style>
+
+<script src="jquery-3.2.1.js"></script>
+
+<script>
+$(document).ready(function(){
+    $("#txt3").click(function(){
+       var num1 =  $("#text1").val();
+       var num2=  $("#text2").val();
+       if(num1 < num2 || num1 == 0){
+      $( "text1" ).addClass( "text1-error" );
+      $('#text1').css('border-color', 'red');
+        alert("invalid values");
+       }
+       else{
+        alert(num1 - num2);
+       }
+    });
+    
+    
+});
+</script>
+	
+</head>
+<body>
+
+	
+text1: <input type="text" name = "name1" id ="text1" class="te">
+text2: <input type="text" name = "name2" id ="text2">
+
+<button id="txt3">submit </button>
+</body>
+</html>

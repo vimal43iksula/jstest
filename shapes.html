@@ -1,0 +1,50 @@
+<!Doctype html>
+<head>
+
+	<script src="jquery-3.2.1.js"></script>
+
+	<script>
+
+		
+	$(document).ready(function(){
+
+				$("#rect").click(function(){
+				$(".div1").animate({width : "500px", height: "300px" , borderRadius: "0%"});
+			});
+
+				$("#circle").click(function(){
+				$(".div1").animate({width: "300px", height: "300px" , borderRadius: "50%"});
+
+		});
+				$("#reset").click(function(){
+				$(".div1").animate({width : "100px", height: "100px" , borderRadius: "0%"});
+
+			});
+});
+
+		</script>
+
+
+	<style>
+
+
+		</style>
+
+
+	<body>
+
+		<div class="div1" style="width:100px; height:100px; background-color: lightgreen;"></div>
+
+		<button id="rect">Rectangle</button>
+		<button id="circle">Circle</button>
+		<button id="reset">Reset</button>
+
+		</body>
+
+		</html>
+
+
+
+
+
+

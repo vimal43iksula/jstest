@@ -1,0 +1,61 @@
+<!Doctype html>
+<head>
+
+	<script src="jquery-3.2.1.js"></script>
+
+	<script>
+
+		$(document).ready(function(){
+				$("#add").click(function(){
+					 var a =  $("#test").val();
+					 var b =  $("#test2").val();
+					 if(a < b || a == 0){
+      $( "#test" ).addClass( "text1-error" );
+      $('#test2').css('border-color', 'red');
+        alert("invalid values");
+      }
+       else{
+        alert(a - b);
+       }
+    });
+
+				
+
+});
+
+			</script>
+
+
+	<style>
+				form{
+
+					  padding: 20px;
+					  width: 150px;
+					  height: 150px;
+					  margin: 20px;
+
+				}
+
+
+.text1-error{
+   color: blue;
+}
+			</style>
+
+	<body>
+        
+		
+
+First:<input type="text" name="first" id="test"> <br>
+
+Second<input type="text" name="second" id="test2"> 
+
+<button id="add">Submit</button>
+
+
+
+
+			</body>
+
+
+			</html>
